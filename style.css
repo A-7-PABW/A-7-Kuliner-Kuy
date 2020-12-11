@@ -1,0 +1,962 @@
+* {
+	padding:0;
+	margin:0;
+	color: black;
+	font-family: sans-serif ;
+  scroll-behavior: smooth;
+}
+header {
+	height:70px;
+	background-color: rgb(60, 179, 113);
+	
+}
+header h1 {
+	display: inline-block;
+	padding:auto;
+	text-transform: uppercase;
+}
+header h1 a {
+	transition: .3s;
+	font-family: 'Pacifico', cursive;
+	color: #fff;
+
+}
+header h1 a:hover {
+	color: black;
+}
+header ul {
+	float: right;
+	justify-content: space-around;
+	display: flex;
+}
+header ul li {
+	padding:24px;
+	display: inline-block;
+}
+header ul li a {
+	transition: .2s;
+	color:#fff;
+}
+header ul li a:hover {
+	color: black;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width:90%;
+	margin:0 auto;
+
+}
+
+.container p{
+	text-align: center;
+}
+
+.container a{
+	float: center;
+}
+
+.container .selengkapnya{
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+
+ .selengkapnya a{
+	float: middle;
+}
+
+.container .selengkapnya:hover {
+	margin-left:10px;
+	}
+
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding:18px;
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-color: rgba(60, 179, 113, 0.9);
+	transition: .3s;
+	z-index: 9999;
+}
+.sidebar ul li a {
+	color: #fff;
+}
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color: #F84744;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+.banner {
+	background-image: url(img/foto2.jpg) ;
+	background-size: cover;
+	padding:150px 0;
+	border: 4px solid #3CB371;
+	border-radius: 10px;
+	margin-top: 3px;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+section {
+	padding:50px 0;
+}
+.banner img {
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px #ddd;
+	margin-bottom: 10px;
+}
+.banner h2,
+.banner span {
+	color: black;
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+
+.banner-left {
+	font-size: 30px;
+	text-align: center;
+	padding-left:24px;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #3CB371;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: black;
+	left: calc(50% - 20px);
+}
+#tentang p {
+	text-align: justify;
+	text-indent: 0;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+#kontak {
+	background-color: rgba(60, 179, 113, 0.2);
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+.col-4 {
+	width:33%;
+	box-sizing: border-box;
+	padding:5px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+.col-4 img {
+	width:100%;
+}
+
+.col-4 a:hover img {
+	transform: scale(1.1);
+}
+.col-3 {
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:50px 10px;
+}
+.col-3 h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #3CB371;
+	margin-bottom: 15px;
+}
+
+.col-3 img{
+	width:100%;	
+}
+
+.tim {
+	width:33%;
+	box-sizing: border-box;
+	padding:5px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+.tim img {
+	width:100%;
+	border: 4px solid #3CB371;
+}
+
+.tim a:hover img {
+	transform: scale(1.1);
+}
+
+/*BAGIAN FOOTER*/
+footer {
+	background-color: #3CB371;
+	padding:50px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/*bagian Tentang Kami */
+.tentangkami {
+	font-size: 40px;
+	text-align: center;
+	padding-left:24px;
+}
+
+.tentangkami h2{
+	color:rgba(60, 179, 113, 0.9);
+}
+
+.banner2 {
+	background-image: url(img/rapat.jpg);
+	background-size: cover;
+	padding:150px 0;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	border: 4px solid #3CB371;
+	border-radius: 10px;
+
+}
+
+.banner2 img {
+	width: 100%;
+	border-radius: 10px;
+	background-size: cover;
+}
+
+
+
+.container2{
+	width: 90%;
+	margin:0 auto;
+}
+
+/*Bagian Hubungi kami/kontak*/
+
+.banner3{
+	background-image: url(img/foto3.jpg);
+	background-size: cover;
+	padding:150px 0;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	border: 4px solid #3CB371;
+	border-radius: 10px;
+}
+
+.banner3 h2{
+	color: rgba(60, 179, 113, 0.9);
+
+}
+
+/*Bagian Kuliner*/
+
+.banner4{
+	background-image: url(img/fotomalam.jpg);
+	background-size: cover;
+	padding:150px 0;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	border: 4px solid #3CB371;
+	border-radius: 10px;
+}
+.banner4 .kuliner h2{
+	font-size: 50px
+}
+.banner4 .kuliner h2 ,p{
+	color:black;
+}
+
+
+:root {
+  --color: #3CB371;
+  --transition-time: 0.5s;
+}
+
+.kuliner1 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  padding: 0.5px;
+  margin: 0 auto;
+  min-height: 20vh;
+}
+
+.isi1{
+  background-image: url(img/sampah.jpg);
+  font-family: sans-serif;
+  --bg-filter-opacity: 0.5;
+  width: 100%
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em #3CB371;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #3CB371;
+  text-decoration: none;
+}
+
+.isi1:hover {
+  transform: rotate(0);
+}
+
+.isi1 h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.isi1 p {
+  font-size: 0.75em;
+  font-family: sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.isi1 .tags {
+  display: flex;
+}
+
+.isi1 .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.isi1:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.isi1:before, .isi:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.isi1:before {
+  background: rgba(255,255,255,0.1);
+  width: 250%;
+  height: 250%;
+}
+
+.isi1:after {
+  background: rgba(255,255,255,0.1);
+  width: 200%;
+  height: 200%;
+}
+
+.isi1:hover {
+  color: var(--color);
+}
+
+.isi1:hover:before, .isi1:hover:after {
+  transform: scale(1);
+}
+
+.isi2{
+  background-image: url(img/klotok.jpg);
+  font-family: sans-serif;
+  --bg-filter-opacity: 0.5;
+  width: 100%
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em #3CB371;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #3CB371;
+  text-decoration: none;
+}
+
+.isi2:hover {
+  transform: rotate(0);
+}
+
+.isi2 h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.isi2 p {
+  font-size: 0.75em;
+  font-family: sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.isi2 .tags {
+  display: flex;
+}
+
+.isi2 .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.isi2:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.isi2:before, .isi2:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.isi2:before {
+  background: rgba(255,255,255,0.1);
+  width: 250%;
+  height: 250%;
+}
+
+.isi2:after {
+  background: rgba(255,255,255,0.1);
+  width: 200%;
+  height: 200%;
+}
+
+.isi2:hover {
+  color: var(--color);
+}
+
+.isi2:hover:before, .isi2:hover:after {
+  transform: scale(1);
+}
+
+.isi3{
+  background-image: url(img/merapi.jpg);
+  font-family: sans-serif;
+  --bg-filter-opacity: 0.5;
+  width: 100%
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em #3CB371;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #3CB371;
+  text-decoration: none;
+}
+
+.isi3:hover {
+  transform: rotate(0);
+}
+
+.isi3 h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.isi3 p {
+  font-size: 0.75em;
+  font-family: sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.isi3 .tags {
+  display: flex;
+}
+
+.isi3 .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.isi3:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.isi3:before, .isi3:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.isi3:before {
+  background: rgba(255,255,255,0.1);
+  width: 250%;
+  height: 250%;
+}
+
+.isi3:after {
+  background: rgba(255,255,255,0.1);
+  width: 200%;
+  height: 200%;
+}
+
+.isi3:hover {
+  color: var(--color);
+}
+
+.isi3:hover:before, .isi3:hover:after {
+  transform: scale(1);
+}
+
+.isi4{
+  background-image: url(img/gudeg.jpg);
+  font-family: sans-serif;
+  --bg-filter-opacity: 0.5;
+  width: 100%
+  font-size: 1.5em;
+  color: white;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em #3CB371;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #3CB371;
+  text-decoration: none;
+}
+
+.isi4:hover {
+  transform: rotate(0);
+}
+
+.isi4 h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.isi4 p {
+  font-size: 0.75em;
+  font-family: sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.isi4 .tags {
+  display: flex;
+}
+
+.isi4 .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.isi4:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.isi4:before, .isi4:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.isi4:before {
+  background: rgba(255,255,255,0.1);
+  width: 250%;
+  height: 250%;
+}
+
+.isi4:after {
+  background: rgba(255,255,255,0.1);
+  width: 200%;
+  height: 200%;
+}
+
+.isi4:hover {
+  color: var(--color);
+}
+
+.isi4:hover:before, .isi3:hover:after {
+  transform: scale(1);
+}
+
+/* ----------------------------------------BAGIAN MAKANAN-------------------------------------------------------------*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+.u-clearfix {
+  *zoom: 1;
+}
+
+.subtle {
+  color: #aaa;
+}
+
+.makanan {
+  background: #FAF7F;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 25px auto 0;
+  position: relative;
+  width: 800px;
+}
+
+.card {
+  background-color: rgba(192, 192, 192, 0.1);
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 5px #3CB371;
+  z-index: 1;
+  border-radius: 0.3rem;
+}
+
+.card-body {
+  display: inline-block;
+  float: left;
+  width: 310px;
+}
+
+.card-number {
+  margin-top: 15px;
+}
+
+.card-circle {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+}
+
+.card-author {
+  display: block;
+  font-size: 12px;
+  letter-spacing: .5px;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  margin: 10px 0;
+  color:#3CB371;
+}
+
+.card-description {
+  display: inline-block;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+
+.card-read:after {
+  background-color: #b8bddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 9px;
+  width: 75%;
+}
+
+.card-tag {
+  float: right;
+  margin: 5px 0 0;
+}
+
+.card-media {
+  float: bottom;
+  width: 55%;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.card-shadow {
+  background-color: #fff;
+  box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
+  height: 1px;
+  margin: -1px auto 0;
+  width: 80%;
+  z-index: -1;
+}
+/*---------------------------------------------------------------ULASAN-----------------------------------------------------*/
+
+.komentar{
+
+  font-family: 'Cormorant Garamond', serif;
+  background-color: rgba(192, 192, 192, 0.1);
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 5px #3CB371;
+  z-index: 1;
+  border-radius: 0.3rem;
+}
+
+.komentar table{
+  text-align:center; 
+  font-family: 'Lato', sans-serif;
+}
+.komentar table td{
+  color: #FAF7F;
+  padding-top: 20px;
+  border-bottom:2px #3CB371 solid;
+}
+
+.table table{
+  float: right;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #43A047;
+}
+button:active {
+  background: #43A047;
+}
+button:focus {
+  background: #43A047;
+}
+
+.input-text{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+@media (max-width: 860px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+
+  .makanan{
+    width: 100%;
+  }
+  .card-media {
+  float: bottom;
+  width: 40%;
+  margin-top: 60px;
+  border-radius: 10px;
+  }
+
+	.col-4 {
+		width:33%;
+	}
+	.col-3 {
+		width:100%;
+	}
+	.tim{
+		width:33%;
+	}
+	.tentangkami{
+		font-size: 30px;
+	}
+	.kuliner1{
+		width: 50%;
+	}
+}
+@media (max-width: 576px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+  .makanan{
+    width:100%;
+  }
+  .card-media {
+  float: bottom;
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 10px;
+  }
+	.col-4 {
+		width:100%;
+	}
+	.col-3 {
+		width:100%;
+	}
+	.tim{
+		width:100%;
+	}
+	.tentangkami{
+		font-size: 30px;
+	}
+	.kuliner1{
+		display: none;
+	}
+  .table{
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+}
